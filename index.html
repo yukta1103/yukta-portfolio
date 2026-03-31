@@ -32,8 +32,7 @@
     <p class="section-label">AI / ML Engineer</p>
     <h1>Hi, I'm Yukta.</h1>
     <p class="hero-sub">
-      Graduate student in AI at Northeastern — building things at the 
-      intersection of NLP, deep learning, and reinforcement learning.
+      I build and ship ML systems from fine-tuned transformers and RL agents to end-to-end data pipelines. Specializing in NLP, deep learning, and applied AI.
     </p>
     <div class="hero-ctas">
       <a href="#projects" class="btn btn-primary">View my work</a>
@@ -47,13 +46,51 @@
     <h2>A little background</h2>
     <p>
       I'm an AI/ML grad student at Northeastern with a focus on NLP and RL.
-      I enjoy working at the intersection of research and engineering —
+      I enjoy working at the intersection of research and engineering
       from training models to shipping end-to-end pipelines.
-      Currently seeking roles in NLP science and data science.
+      Currently seeking roles in AI/ML, NLP and data science.
     </p>
   </section>
 
-  <!-- ── SKILLS ─────────────────────────────────── -->
+  <!-- ── EXPERIENCE ────────────────────────────── -->
+  <section id="experience">
+    <p class="section-label">Experience</p>
+    <h2>Where I've worked</h2>
+
+    <div class="project-card">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
+        <h3>Machine Learning Intern — Kirusa, Inc.</h3>
+        <span style="font-size:12px; color:var(--text2);">Aug 2023 – Nov 2023</span>
+      </div>
+      <p>Fine-tuned and deployed NLP models using HuggingFace Transformers with zero-shot classification for text summarization. Designed preprocessing pipelines for large-scale unstructured datasets and improved model accuracy by 12% through cross-functional collaboration.</p>
+      <div class="project-tags">
+        <span>HuggingFace</span><span>NLP</span><span>Zero-shot</span><span>Python</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
+        <h3>Machine Learning Intern — AICTE</h3>
+        <span style="font-size:12px; color:var(--text2);">May 2023 – Jul 2023</span>
+      </div>
+      <p>Built deep learning-based recommendation components for image classification workflows. Developed model evaluation frameworks and produced visual and written reports for technical and non-technical stakeholders.</p>
+      <div class="project-tags">
+        <span>Deep Learning</span><span>PyTorch</span><span>Model Evaluation</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
+        <h3>Data Engineering Intern — AICTE</h3>
+        <span style="font-size:12px; color:var(--text2);">Sep 2022 – Nov 2022</span>
+      </div>
+      <p>Developed automated ETL pipelines for large heterogeneous datasets, improving analytics readiness by 20%. Integrated preprocessing steps including feature extraction, normalization, and data validation.</p>
+      <div class="project-tags">
+        <span>ETL</span><span>Data Engineering</span><span>Python</span><span>Apache Spark</span>
+      </div>
+    </div>
+
+  </section>
   <section id="skills">
     <p class="section-label">Skills</p>
     <h2>What I work with</h2>
@@ -79,12 +116,12 @@
 
     <div class="project-card">
       <h3>Pokemon Battle AI — Deep Q-Learning</h3>
-      <p>RL agent that learns optimal Pokemon battle strategies using DQN, training against a variety of opponent types to develop generalizable combat policies.</p>
+      <p>DQN and PPO agents trained with reward signals to learn optimal Pokemon battle strategies via self-play. Increased win rate by 22% over random and rule-based baselines through iterative refinement.</p>
       <div class="project-tags">
-        <span>Reinforcement Learning</span><span>DQN</span><span>PyTorch</span>
+        <span>Reinforcement Learning</span><span>DQN</span><span>PPO</span><span>OpenAI Gym</span><span>PyTorch</span>
       </div>
       <div class="project-links">
-        <a href="#">GitHub</a>
+        <a href="https://github.com/yukta1103/Reinforcement-Learning-AI-for-Pokemon-Battles">GitHub</a>
       </div>
     </div>
 
@@ -100,47 +137,35 @@
     </div>
 
     <div class="project-card">
-      <h3>TumorClassificationXAI</h3>
-      <p>Metastatic cancer detection on 96×96 histopathology images from the Kaggle challenge. Compares a baseline CNN against a batch-normalized architecture, with explainability via Grad-CAM and SHAP.</p>
+      <h3>Explainable AI for Tumor Classification</h3>
+      <p>ResNet/VGG models for benign vs. malignant tumor classification on histopathology images. Applied Grad-CAM and SHAP for explainability, with 5-fold cross-validation and data augmentation for generalization.</p>
       <div class="project-tags">
-        <span>Computer Vision</span><span>CNN</span><span>Grad-CAM</span><span>SHAP</span><span>PyTorch</span>
+        <span>Computer Vision</span><span>ResNet</span><span>Grad-CAM</span><span>SHAP</span><span>PyTorch</span>
       </div>
       <div class="project-links">
-        <a href="#">GitHub</a>
+        <a href="https://github.com/yukta1103/Tumor-Classification">GitHub</a>
       </div>
     </div>
 
     <div class="project-card">
       <h3>SentiLyrics — Lyrics Mood Classifier</h3>
-      <p>Classifies song lyrics into emotional categories — fear, disgust, happiness, and more — enabling mood-based music recommendations and emotional trend analysis.</p>
+      <p>NLP pipeline classifying song lyrics into mood categories for personalized music recommendations. Fine-tuned LSTMs, CNNs, and Transformers on 5M+ lyrics, achieving 87% accuracy with strong F1-score.</p>
       <div class="project-tags">
-        <span>NLP</span><span>Text Classification</span><span>Scikit-learn</span>
+        <span>NLP</span><span>Transformers</span><span>BERT</span><span>PyTorch</span>
       </div>
       <div class="project-links">
-        <a href="#">GitHub</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <h3>MoodMelody — Lyrics Emotion Classifier</h3>
-      <p>Streamlit app that classifies emotions in song lyrics using TF-IDF and a fine-tuned DistilBERT model. Deployed on Streamlit Cloud.</p>
-      <div class="project-tags">
-        <span>NLP</span><span>DistilBERT</span><span>Streamlit</span><span>TF-IDF</span>
-      </div>
-      <div class="project-links">
-        <a href="#">GitHub</a>
-        <a href="#">Live demo</a>
+        <a href="https://github.com/yukta1103/Sentilyrics-Lyrics-Mood-Classifier">GitHub</a>
       </div>
     </div>
 
     <div class="project-card">
       <h3>Earthquake First Aftershock Prediction</h3>
-      <p>Predicts the magnitude and timing of a mainshock's first aftershock using the USGS Earthquake Catalog (2004–2018). Explores multiple ML techniques to model aftershock characteristics despite limited feature correlation.</p>
+      <p>Regression models (Random Forest, XGBoost, DNN) trained on USGS seismic data (2004–2018) to predict aftershock timing and magnitude. Engineered temporal and spatial features; validated with MSE, MAE, and R².</p>
       <div class="project-tags">
-        <span>Machine Learning</span><span>Regression</span><span>Scikit-learn</span><span>Geospatial</span>
+        <span>Machine Learning</span><span>XGBoost</span><span>Random Forest</span><span>TensorFlow</span>
       </div>
       <div class="project-links">
-        <a href="#">GitHub</a>
+        <a href="https://github.com/yukta1103/Earthquake-First-Aftershock-Prediction">GitHub</a>
       </div>
     </div>
 
