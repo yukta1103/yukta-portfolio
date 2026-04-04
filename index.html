@@ -21,6 +21,8 @@
     <a href="#hero" class="nav-logo">Yukta</a>
     <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#resume">Resume</a></li>
@@ -56,6 +58,36 @@
       I've built systems ranging from tumor classification with visual explanations to large-scale NLP pipelines trained on millions of data points.
       I'm currently seeking AI/ML engineering roles where I can contribute to impactful, production-grade systems.
     </p>
+  </section>
+
+  <!-- ── EDUCATION ─────────────────────────────── -->
+  <section id="education">
+    <p class="section-label">Education</p>
+
+    <div class="project-card">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
+        <h3>M.S. in Artificial Intelligence</h3>
+        <span style="font-size:12px; color:var(--text2);">Sep 2024 – May 2026</span>
+      </div>
+      <p>
+        <strong>Northeastern University</strong> · Boston, MA · GPA: 3.6 / 4.0<br>
+        Relevant Coursework: Reinforcement Learning, Natural Language Processing,
+        Foundations of Artificial Intelligence, Algorithms, Programming Design Paradigm.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
+        <h3>B.Tech. in Computer Science</h3>
+        <span style="font-size:12px; color:var(--text2);">Aug 2020 – May 2024</span>
+      </div>
+      <p>
+        <strong>SRM Institute of Science and Technology</strong> · Chennai, India<br>
+        Relevant Coursework: Algorithms, Machine Learning, Database Systems,
+        Probability & Statistics, Operating Systems.
+      </p>
+    </div>
+
   </section>
 
   <!-- ── EXPERIENCE ────────────────────────────── -->
@@ -107,10 +139,10 @@
 
   </section>
   <section id="skills">
+  <p class="section-label">Skills</p>
   <p style="max-width:600px; margin-bottom:1.5rem; color:var(--text2);">
     I focus on building ML systems that generalize beyond training data, with strengths in explainable AI, NLP, and multimodal learning.
   </p>
-  <p class="section-label">Skills</p>
   <div class="skills-rows">
 
     <div class="skill-row">
@@ -123,7 +155,7 @@
     <div class="skill-row">
       <span class="skill-row-label">ML / DL</span>
       <ul class="skills-list">
-        <li>LLM Fine-tuning</li><li>NLP</li><li>Deep Learning</li><li>Zero-shot Learning</li><li>Transformers</li><li>Rec. Systems</li>
+        <li>LLM Fine-tuning</li><li>NLP</li><li>Deep Learning</li><li>Computer Vision</li><li>Zero-shot Learning</li><li>Transformers</li><li>Rec. Systems</li>
       </ul>
     </div>
 
@@ -155,27 +187,18 @@
       </ul>
     </div>
 
+    <div class="skill-row">
+      <span class="skill-row-label">Tools</span>
+      <ul class="skills-list">
+        <li>Git</li><li>Streamlit</li><li>Jupyter</li><li>VS Code</li><li>Postman</li>
+      </ul>
+    </div>
   </div>
 </section>
 
   <!-- ── PROJECTS ───────────────────────────────── -->
   <section id="projects">
     <p class="section-label">Projects</p>
-
-    <div class="project-card">
-      <h3>Pokemon Battle AI — Deep Q-Learning</h3>
-      <p>
-        Developed DQN and PPO agents using reinforcement learning to optimize Pokémon battle strategies via self-play.
-        Implemented exploration tuning and reward shaping to improve decision-making efficiency.
-        <strong>Impact:</strong> Increased win rate by 22% compared to random and rule-based baselines.
-      </p>
-      <div class="project-tags">
-        <span>Reinforcement Learning</span><span>DQN</span><span>PPO</span><span>OpenAI Gym</span><span>PyTorch</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/yukta1103/Reinforcement-Learning-AI-for-Pokemon-Battles">GitHub</a>
-      </div>
-    </div>
 
     <div class="project-card">
       <h3>Picasso — Learning to Paint with Deep RL</h3>
@@ -221,13 +244,35 @@
     </div>
 
     <div class="project-card">
-      <h3>MoodMelody — Lyrics Emotion Classifier</h3>
-      <p>Streamlit app that classifies emotions in song lyrics using TF-IDF and a fine-tuned DistilBERT model. Deployed on Streamlit Cloud.</p>
+      <h3>Pokemon Battle AI — Deep Q-Learning</h3>
+      <p>
+        Developed DQN and PPO agents using reinforcement learning to optimize Pokémon battle strategies via self-play.
+        Implemented exploration tuning and reward shaping to improve decision-making efficiency.
+        <strong>Impact:</strong> Increased win rate by 22% compared to random and rule-based baselines.
+      </p>
       <div class="project-tags">
-        <span>NLP</span><span>DistilBERT</span><span>Streamlit</span><span>TF-IDF</span>
+        <span>Reinforcement Learning</span><span>DQN</span><span>PPO</span><span>OpenAI Gym</span><span>PyTorch</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/yukta1103/MoodMelody-Lyrics-Emotion-Classifier">GitHub</a>
+        <a href="https://github.com/yukta1103/Reinforcement-Learning-AI-for-Pokemon-Battles">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>HeritageLens — AI Landmark Recognition</h3>
+      <p>
+        Fine-tuned ResNet18 via transfer learning on a custom-scraped dataset of 15 global landmarks,
+        achieving <strong>84% validation accuracy</strong> across 1,600+ images.
+        Built full pipeline: automated data collection, augmentation, and confidence-gated inference.
+        <strong>Impact:</strong> Deployed as an interactive web app with real-time Wikipedia integration
+        and live webcam capture, reducing misclassification display rate to 0% via confidence thresholding.
+      </p>
+      <div class="project-tags">
+        <span>Computer Vision</span><span>Transfer Learning</span><span>ResNet18</span>
+        <span>PyTorch</span><span>Streamlit</span><span>Wikipedia API</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/yukta1103/HeritageLens">GitHub</a>
       </div>
     </div>
 
@@ -243,6 +288,17 @@
       </div>
       <div class="project-links">
         <a href="https://github.com/yukta1103/Earthquake-First-Aftershock-Prediction">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>MoodMelody — Lyrics Emotion Classifier</h3>
+      <p>Streamlit app that classifies emotions in song lyrics using TF-IDF and a fine-tuned DistilBERT model. Deployed on Streamlit Cloud.</p>
+      <div class="project-tags">
+        <span>NLP</span><span>DistilBERT</span><span>Streamlit</span><span>TF-IDF</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/yukta1103/MoodMelody-Lyrics-Emotion-Classifier">GitHub</a>
       </div>
     </div>
 
