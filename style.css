@@ -435,3 +435,38 @@ footer {
   border-color: var(--accent);
   background: rgba(232, 160, 168, 0.05);
 }
+
+.hero-layout {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+}
+
+.hero-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent, #7c6ef7);
+}
+
+@media (max-width: 600px) {
+  .hero-layout {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .hero-photo img {
+    width: 120px;
+    height: 120px;
+  }
+}
