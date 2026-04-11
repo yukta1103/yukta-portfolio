@@ -102,6 +102,31 @@ body {
   position: relative;
 }
 
+.hero-layout {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+}
+
+.hero-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 30px var(--accent-glow);
+}
+
 .section-label {
   font-family: var(--font-mono);
   font-size: 20px;
@@ -310,6 +335,21 @@ p { color: var(--text-muted); }
 }
 
 
+/* ── PROJECT DOMAIN LABELS ──────────────────────────────── */
+.project-domain-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--accent2);
+}
+
+
 /* ── PROJECTS ───────────────────────────────────────────── */
 .project-card h3 {
   font-size: 1rem;
@@ -377,6 +417,8 @@ p { color: var(--text-muted); }
   text-decoration: none;
   color: var(--text-muted);
   font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
   transition: all 0.15s ease;
 }
 
@@ -399,13 +441,7 @@ footer {
 }
 
 
-/* ── RESPONSIVE ─────────────────────────────────────────── */
-@media (max-width: 768px) {
-  #navbar { padding: 0 1.5rem; }
-  .nav-links { display: none; }
-  #hero { padding-top: 6rem; }
-}
-
+/* ── CURSOR ─────────────────────────────────────────────── */
 .cursor-dot {
   width: 6px;
   height: 6px;
@@ -436,28 +472,12 @@ footer {
   background: rgba(232, 160, 168, 0.05);
 }
 
-.hero-layout {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  flex-wrap: wrap;
-}
 
-.hero-text {
-  flex: 1;
-  min-width: 280px;
-}
-
-.hero-photo {
-  flex-shrink: 0;
-}
-
-.hero-photo img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid var(--accent, #7c6ef7);
+/* ── RESPONSIVE ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  #navbar { padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  #hero { padding-top: 6rem; }
 }
 
 @media (max-width: 600px) {
