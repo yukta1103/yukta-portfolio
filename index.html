@@ -252,7 +252,7 @@
     </div>
 
     <!-- Computer Vision / Healthcare AI -->
-    <div class="project-domain-label">Computer Vision · Healthcare AI</div>
+    <div class="project-domain-label">Computer Vision</div>
 
     <div class="project-card">
       <h3>Explainable AI for Tumor Classification</h3>
@@ -295,11 +295,9 @@
     <div class="project-card">
       <h3>Picasso — Learning to Paint with Deep RL</h3>
       <p>
-        Training an RL agent to reproduce target images through sequential brushstrokes in the
-        LearningToPaint environment — framing painting as a high-dimensional continuous control problem.
-        Implementing <strong>TD3 (off-policy)</strong> and comparing against a PPO baseline (on-policy),
-        with three structured baselines and a formal MDP definition.
-        Currently at 500k+ training steps with promising validation reward curves.
+        Implemented TD3 from scratch on a model-based RL painting agent, replacing DDPG with twin critics, delayed updates, and target policy smoothing
+        Trained on 38K CelebA images over 3M steps, achieving 83% reduction in reconstruction error using a differentiable Neural Renderer and WGAN-GP rewards
+        Compared TD3 vs SAC on sequential stroke-based image reconstruction, analyzing tradeoffs between deterministic stability and entropy-driven exploration
       </p>
       <div class="project-tags">
         <span>Reinforcement Learning</span><span>TD3</span><span>PPO</span><span>PyTorch</span>
@@ -327,7 +325,7 @@
     </div>
 
     <!-- ML / Predictive Modeling -->
-    <div class="project-domain-label">Machine Learning · Predictive Modeling</div>
+    <div class="project-domain-label">Machine Learning</div>
 
     <div class="project-card">
       <h3>Earthquake First Aftershock Prediction</h3>
