@@ -36,7 +36,11 @@ body {
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
-  cursor: none;
+  @media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
 }
 
 
@@ -98,7 +102,7 @@ body {
 #hero {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 8rem 2rem 6rem;
+  padding: 6rem 2rem 5rem;
   position: relative;
 }
 
@@ -140,9 +144,10 @@ body {
 
 h1 {
   font-size: clamp(2.2rem, 5vw, 4rem);
+  font-size: clamp(2.0rem, 4.5vw, 3.5rem);
   font-weight: 500;
   line-height: 1.1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   color: var(--text);
   margin-bottom: 1.5rem;
 }
@@ -359,8 +364,9 @@ p { color: var(--text-muted); }
 }
 
 .project-card p {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-muted);
+  opacity: 0.85;
   margin-bottom: 1rem;
   line-height: 1.7;
 }
@@ -379,7 +385,8 @@ p { color: var(--text-muted); }
   border-radius: 4px;
   background: rgba(232, 160, 168, 0.05);
   border: 1px solid var(--border);
-  color: var(--accent);
+  color: var(--text-muted);
+  border-color: rgba(255,255,255,0.08);
 }
 
 .project-links { display: flex; gap: 1rem; }
