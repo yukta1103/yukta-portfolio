@@ -38,9 +38,9 @@
       <div class="hero-text">
         <h1>Hi, I'm Yukta. I build production-ready AI systems that work beyond benchmarks.</h1>
         <p class="hero-sub">
-          I build and ship production-grade ML systems across NLP, computer vision, and reinforcement learning. 
-          From fine-tuning transformers on 5M+ data points to delivering 12% accuracy gains, 
-          I focus on models that perform reliably in real-world settings not just benchmarks.
+          I build and ship production-grade ML systems from fine-tuning transformers on 5M+ data points to 
+          building multi-agent systems that debate and self-correct. I focus on models that perform reliably 
+          in real-world settings, not just benchmarks.
         </p>
         <p class="section-label">MS in AI, Northeastern University · Boston, MA · Open to Relocation</p>
         <div class="hero-ctas">
@@ -61,7 +61,7 @@
       I'm a Master's graduate in Artificial Intelligence from Northeastern University (May 2026),
       with a focus on building systems that work beyond the benchmark - in messy, real-world conditions.
       My core interests sit at the intersection of <strong>NLP</strong>, <strong>healthcare AI</strong>,
-      and increasingly, <strong>reinforcement learning</strong>.
+      and increasingly, <strong>reinforcement learning</strong>, <strong>multi-agent systems</strong>.
     </p>
     <p>
       I'm drawn to problems where model interpretability matters: whether that's explaining a tumor classifier
@@ -183,7 +183,7 @@
       <div class="skill-row">
         <span class="skill-row-label">Frameworks</span>
         <ul class="skills-list">
-          <li>PyTorch</li><li>TensorFlow</li><li>HuggingFace</li><li>LangChain</li><li>Scikit-learn</li>
+          <li>PyTorch</li><li>TensorFlow</li><li>HuggingFace</li><li>LangChain</li><li>Scikit-learn</li><li>LangGraph</li>
         </ul>
       </div>
 
@@ -216,6 +216,27 @@
   <!-- ── PROJECTS ───────────────────────────────── -->
   <section id="projects">
     <p class="section-label">Projects</p>
+
+    <!-- Agents / Multi-Agent Systems -->
+    <div class="project-domain-label">Agents & LLMs</div>
+
+    <div class="project-card">
+      <h3>LoopFix - Adversarial Multi-Agent Coding System</h3>
+      <p>
+        Built a multi-agent debate system where a <strong>Builder</strong> agent writes Python solutions
+        and a <strong>Breaker</strong> agent attacks them with adversarial test cases —
+        explaining <em>why</em> each one could break the code. They iterate until the solution is bulletproof or hits the round limit.
+        Designed a two-temperature architecture: Builder at 0.2 for deterministic correctness,
+        Breaker at 0.8 for creative adversarial reasoning.
+        <strong>Benchmark:</strong> 75% of problems fully solved (6/8), avg. 1.8 rounds to solve running 100% locally on a single GPU with zero API costs.
+      </p>
+      <div class="project-tags">
+        <span>LangGraph</span><span>Multi-Agent</span><span>DeepSeek-Coder</span><span>Ollama</span><span>Streamlit</span><span>Python</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/yukta1103/LoopFix" target="_blank">GitHub</a>
+      </div>
+    </div>
 
     <!-- Computer Vision / Healthcare AI -->
     <div class="project-domain-label">Computer Vision</div>
@@ -359,8 +380,8 @@
     <h2>Let's build something.</h2>
     <p>
       I recently graduated (May 2026) and am available immediately for full-time AI/ML engineering roles.
-      Based in Boston, open to relocation. If you're working on hard problems in NLP, healthcare AI,
-      or applied ML, let's talk.
+      Based in Boston, open to relocation. If you're working on hard problems in NLP, healthcare AI, agentic
+       systems, or applied ML, let's talk.
     </p>
     <div class="contact-links">
       <a href="mailto:kasinayukta@gmail.com" class="contact-link">Email</a>
