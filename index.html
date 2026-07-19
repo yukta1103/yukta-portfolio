@@ -217,15 +217,34 @@
   <section id="projects">
     <p class="section-label">Projects</p>
 
-    <!-- Agents / Multi-Agent Systems -->
-    <div class="project-domain-label">Agents & LLMs</div>
+    <!-- LLM Reasoning & Agentic Systems -->
+    <div class="project-domain-label">LLM Reasoning & Agentic Systems</div>
+
+    <div class="project-card">
+      <h3>Quiet-STaR - Entropy-Gated Self-Taught Reasoning</h3>
+      <p>
+        Reimplemented <strong>Quiet-STaR</strong> (Zelikman et al., Stanford 2024) on GPT-2 / TinyStories,
+        where the model learns to generate internal rationales token-by-token before predicting the next word.
+        Designed an <strong>entropy-gated</strong> mechanism that triggers rationale generation only at
+        high-uncertainty tokens, rather than at every token as in the original paper - concentrating compute
+        where reasoning actually helps.
+        <strong>Result:</strong> ~12x lower loss at ~50x less compute versus a vanilla baseline, showing that
+        selective, uncertainty-driven reasoning can be dramatically more efficient than dense reasoning traces.
+      </p>
+      <div class="project-tags">
+        <span>LLM Reasoning</span><span>GPT-2</span><span>Entropy-Gating</span><span>PyTorch</span><span>Research</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/yukta1103/quiet-star-entropy" target="_blank">GitHub</a>
+      </div>
+    </div>
 
     <div class="project-card">
       <h3>LoopFix - Adversarial Multi-Agent Coding System</h3>
       <p>
         Built a multi-agent debate system where a <strong>Builder</strong> agent writes Python solutions
-        and a <strong>Breaker</strong> agent attacks them with adversarial test cases —
-        explaining <em>why</em> each one could break the code. They iterate until the solution is bulletproof or hits the round limit.
+        and a <strong>Breaker</strong> agent attacks them with adversarial test cases - explaining <em>why</em> 
+        each one could break the code. They iterate until the solution is bulletproof or hits the round limit.
         Designed a two-temperature architecture: Builder at 0.2 for deterministic correctness,
         Breaker at 0.8 for creative adversarial reasoning.
         <strong>Benchmark:</strong> 75% of problems fully solved (6/8), avg. 1.8 rounds to solve running 100% locally on a single GPU with zero API costs.
@@ -360,7 +379,7 @@
       <div class="project-links">
         <a href="https://github.com/yukta1103/MoodMelody-Lyrics-Emotion-Classifier" target="_blank">GitHub</a>
       </div> -->
-    </div>
+    <!-- </div> -->
 
   </section>
 
