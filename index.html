@@ -263,8 +263,19 @@
       </div>
 
       <div class="project-card compact" data-domain="llm">
-        <div class="project-card-media compact-media">
-          <img src="assets/projects/loopfix.gif" alt="LoopFix Builder vs Breaker agent debate loop demo" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+        <div class="project-card-media compact-media media-carousel">
+          <div class="media-slide active">
+            <img src="assets/projects/loopfix.png" alt="LoopFix Builder vs Breaker architecture diagram" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+          </div>
+          <div class="media-slide">
+            <video src="assets/demos/loopfixdemo.mp4" autoplay muted loop playsinline
+              onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+            </video>
+          </div>
+          <div class="media-dots">
+            <button class="media-dot active" data-slide="0" aria-label="Show diagram"></button>
+            <button class="media-dot" data-slide="1" aria-label="Show demo video"></button>
+          </div>
         </div>
         <span class="domain-badge">LLM Reasoning & Agentic Systems</span>
         <h3>LoopFix - Adversarial Multi-Agent Coding System</h3>

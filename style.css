@@ -222,12 +222,12 @@ p { color: var(--text-muted); }
 #experience .project-card p {
   max-width: 720px;
 }
- 
+
 #about p {
   font-size: 17px;
   line-height: 1.75;
 }
- 
+
 #contact p {
   font-size: 17px;
   line-height: 1.75;
@@ -413,6 +413,54 @@ p { color: var(--text-muted); }
   width: 100%;
   height: 140px;
   margin-bottom: 0.9rem;
+}
+
+.media-carousel {
+  position: relative;
+}
+
+.media-slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.media-slide.active {
+  display: block;
+}
+
+.media-slide img,
+.media-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.media-dots {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 2;
+}
+
+.media-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease;
+}
+
+.media-dot.active {
+  background: var(--accent);
 }
 
 .domain-badge {

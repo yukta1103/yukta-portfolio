@@ -155,3 +155,18 @@ filterBtns.forEach(btn => {
     });
   });
 });
+
+/* ── MEDIA CAROUSELS ────────────────────────────────────── */
+document.querySelectorAll('.media-carousel').forEach(carousel => {
+  const slides = carousel.querySelectorAll('.media-slide');
+  const dots = carousel.querySelectorAll('.media-dot');
+ 
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const index = parseInt(dot.dataset.slide, 10);
+      slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+      dots.forEach(d => d.classList.remove('active'));
+      dot.classList.add('active');
+    });
+  });
+});
