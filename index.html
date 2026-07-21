@@ -237,9 +237,18 @@
 
     <div class="project-grid">
 
-      <div class="project-card compact" data-domain="llm">
-        <div class="project-card-media compact-media">
-          <img src="assets/projects/quiet-star.png" alt="Quiet-STaR loss comparison chart: entropy-gated vs vanilla baseline" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+       <div class="project-card compact" data-domain="llm">
+        <div class="project-card-media compact-media media-carousel">
+          <div class="media-slide active">
+            <img src="assets/projects/quietstar.png" alt="Quiet-STaR loss comparison chart: entropy-gated vs vanilla baseline" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+          </div>
+          <div class="media-slide">
+            <img src="assets/projects/quiet-star.png" alt="Quiet-STaR token stream diagram showing entropy-gated rationale trigger" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+          </div>
+          <div class="media-dots">
+            <button class="media-dot active" data-slide="0" aria-label="Show loss comparison chart"></button>
+            <button class="media-dot" data-slide="1" aria-label="Show token stream diagram"></button>
+          </div>
         </div>
         <span class="domain-badge">LLM Reasoning & Agentic Systems</span>
         <h3>Quiet-STaR - Entropy-Gated Self-Taught Reasoning</h3>
