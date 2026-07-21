@@ -18,7 +18,7 @@
   --accent-glow:  rgba(232, 160, 168, 0.25);
   --border:       rgba(232, 160, 168, 0.12);
   --border-hover: rgba(232, 160, 168, 0.35);
-  --max-w:        780px;
+  --max-w:        1100px;
   --nav-h:        60px;
   --font-sans:    'Inter', -apple-system, system-ui, sans-serif;
   --font-mono:    'JetBrains Mono', monospace;
@@ -27,6 +27,7 @@
 html {
   scroll-behavior: smooth;
   background-color: var(--bg);
+  font-size: 15px;
 }
 
 body {
@@ -218,6 +219,20 @@ h2 {
 
 p { color: var(--text-muted); }
 
+#experience .project-card p {
+  max-width: 720px;
+}
+ 
+#about p {
+  font-size: 17px;
+  line-height: 1.75;
+}
+ 
+#contact p {
+  font-size: 17px;
+  line-height: 1.75;
+}
+
 
 /* ── CARDS ──────────────────────────────────────────────── */
 .project-card, .experience-card {
@@ -251,11 +266,231 @@ p { color: var(--text-muted); }
 .project-card:hover::before { opacity: 1; }
 
 
+/* ── PROJECT CARD MEDIA (image/GIF beside project) ──────── */
+.project-card.has-media {
+  display: flex;
+  align-items: stretch;
+  gap: 1.75rem;
+}
+
+.project-card-media {
+  flex-shrink: 0;
+  width: 220px;
+  height: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card-media img,
+.project-card-media video {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.media-placeholder {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  opacity: 0.6;
+  text-align: center;
+  padding: 1rem;
+}
+
+.project-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-card-body h3 { margin-bottom: 0.5rem; }
+
+/* Cards without media keep the original full-width layout automatically
+   since .project-card-body isn't used — no extra rule needed. */
+
+
+/* ── EDUCATION GRID ──────────────────────────────────────── */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.education-grid .project-card {
+  margin-top: 0;
+}
+
+.education-grid h3 {
+  font-size: 0.95rem;
+}
+
+.edu-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  box-shadow: 0 0 16px var(--accent-glow);
+  flex-shrink: 0;
+  background: #fff;
+}
+
+.edu-school {
+  font-size: 15px !important;
+  color: var(--text) !important;
+  opacity: 1 !important;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem !important;
+}
+
+.edu-coursework {
+  font-size: 12.5px !important;
+  opacity: 0.75 !important;
+}
+
+
+/* ── PROJECT FILTERS ─────────────────────────────────────── */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.filter-btn {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  padding: 7px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--border-hover);
+  color: var(--text);
+}
+
+.filter-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1a1718;
+  font-weight: 600;
+}
+
+
+/* ── PROJECT GRID (compact cards) ────────────────────────── */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.project-card.compact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding: 1.25rem;
+}
+
+.compact-media {
+  width: 100%;
+  height: 140px;
+  margin-bottom: 0.9rem;
+}
+
+.domain-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.project-card.compact h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-summary {
+  font-size: 13px;
+  color: var(--text);
+  opacity: 0.85;
+  line-height: 1.55;
+  margin-bottom: 0.6rem;
+}
+
+.project-details summary {
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  list-style: none;
+  margin-bottom: 0.5rem;
+  user-select: none;
+}
+
+.project-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-details summary::before {
+  content: '+ ';
+}
+
+.project-details[open] summary::before {
+  content: '− ';
+}
+
+.project-details p {
+  font-size: 12.5px;
+  margin-top: 0.4rem;
+  margin-bottom: 0.9rem;
+  opacity: 0.85;
+}
+
+.project-card.compact .project-tags {
+  gap: 5px;
+  margin-bottom: 1rem;
+}
+
+.project-card.compact .project-tags span {
+  font-size: 10px;
+  padding: 2px 9px;
+}
+
+.project-card.compact .project-links {
+  margin-top: auto;
+}
+
+
 /* ── SKILLS ─────────────────────────────────────────────── */
 .skills-categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: start;
+  align-items: stretch;
   gap: 1.25rem;
   margin-top: 1.5rem;
 }
@@ -266,7 +501,9 @@ p { color: var(--text-muted); }
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
   transition: border-color 0.2s ease;
-  align-self: start;
+  display: flex;
+  flex-direction: column;
+  min-height: 270px;
 }
 
 .skill-category:hover {
@@ -393,11 +630,14 @@ p { color: var(--text-muted); }
 .project-links a {
   font-size: 13px;
   font-weight: 600;
-  color: var(--text-muted);
+  color: var(--accent);
   text-decoration: none;
 }
 
-.project-links a:hover { color: var(--accent); }
+.project-links a:hover {
+  color: var(--accent2);
+  text-decoration: underline;
+}
 
 
 /* ── RESUME ─────────────────────────────────────────────── */
@@ -484,6 +724,20 @@ footer {
   #navbar { padding: 0 1.5rem; }
   .nav-links { display: none; }
   #hero { padding-top: 6rem; }
+  .skills-categories { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px) {
+  .project-card.has-media {
+    flex-direction: column;
+  }
+  .project-card-media {
+    width: 100%;
+    height: 200px;
+  }
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 600px) {
@@ -495,16 +749,4 @@ footer {
     width: 120px;
     height: 120px;
   }
-}
-
-.project-links a {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--accent);
-  text-decoration: none;
-}
-
-.project-links a:hover {
-  color: var(--accent2);
-  text-decoration: underline;
 }

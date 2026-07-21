@@ -77,31 +77,40 @@
   <!-- ── EDUCATION ─────────────────────────────── -->
   <section id="education">
     <p class="section-label">Education</p>
-
+ 
+    <div class="education-grid">
+ 
     <div class="project-card">
-      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
-        <h3>M.S. in Artificial Intelligence</h3>
-        <span style="font-size:12px; color:var(--text2);">Sep 2024 – May 2026</span>
+      <div style="display:flex; align-items:center; gap:16px; margin-bottom:8px;">
+        <img src="assets/logos/neu.png" class="edu-logo">
+        <div>
+          <h3 style="margin-bottom:2px;">M.S. in Artificial Intelligence</h3>
+          <span style="font-size:12px; color:var(--text2);">Sep 2024 – May 2026</span>
+        </div>
       </div>
-      <p>
-        <strong>Northeastern University</strong> · Boston, MA<br>
+      <p class="edu-school"><strong>Northeastern University</strong> · Boston, MA</p>
+      <p class="edu-coursework">
         Relevant Coursework: Reinforcement Learning, Natural Language Processing,
         Foundations of Artificial Intelligence, Algorithms, Programming Design Paradigm.
       </p>
     </div>
-
+ 
     <div class="project-card">
-      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
-        <h3>B.Tech. in Computer Science</h3>
-        <span style="font-size:12px; color:var(--text2);">Aug 2020 – May 2024</span>
+      <div style="display:flex; align-items:center; gap:16px; margin-bottom:8px;">
+        <img src="assets/logos/srm.png" class="edu-logo">
+        <div>
+          <h3 style="margin-bottom:2px;">B.Tech. in Computer Science</h3>
+          <span style="font-size:12px; color:var(--text2);">Aug 2020 – May 2024</span>
+        </div>
       </div>
-      <p>
-        <strong>SRM Institute of Science and Technology</strong> · Chennai, India<br>
+      <p class="edu-school"><strong>SRM Institute of Science and Technology</strong> · Chennai, India</p>
+      <p class="edu-coursework">
         Relevant Coursework: Algorithms, Machine Learning, Database Systems,
         Probability & Statistics, Operating Systems.
       </p>
     </div>
-
+ 
+    </div>
   </section>
 
   <!-- ── EXPERIENCE ────────────────────────────── -->
@@ -163,53 +172,53 @@
     <p style="max-width:600px; margin-bottom:1.5rem; color:var(--text2);">
       Strengths in NLP, explainable AI, and reinforcement learning - with a full stack from data pipelines to cloud deployment.
     </p>
-    <div class="skills-rows">
-
-      <div class="skill-row">
-        <span class="skill-row-label">Languages</span>
+    <div class="skills-categories">
+ 
+      <div class="skill-category">
+        <span class="skill-category-title">Languages</span>
         <ul class="skills-list">
           <li>Python</li><li>SQL</li><li>C++</li><li>Java</li><li>TypeScript</li>
         </ul>
       </div>
-
-      <div class="skill-row">
-        <span class="skill-row-label">ML / DL</span>
+ 
+      <div class="skill-category">
+        <span class="skill-category-title">Certifications</span>
         <ul class="skills-list">
-          <li>LLM Fine-tuning</li><li>NLP</li><li>Transformers</li><li>Deep Learning</li>
-          <li>Computer Vision</li><li>Reinforcement Learning</li><li>Zero-shot Learning</li><li>TD3</li>
+          <li>Stanford ML Specialization</li><li>AWS ML Foundations</li><li>Oracle DB Foundations</li>
         </ul>
       </div>
-
-      <div class="skill-row">
-        <span class="skill-row-label">Frameworks</span>
-        <ul class="skills-list">
-          <li>PyTorch</li><li>TensorFlow</li><li>HuggingFace</li><li>LangChain</li><li>Scikit-learn</li><li>LangGraph</li>
-        </ul>
-      </div>
-
-      <div class="skill-row">
-        <span class="skill-row-label">MLOps & Cloud</span>
-        <ul class="skills-list">
-          <li>AWS SageMaker</li><li>AWS Lambda</li><li>AWS S3</li><li>GCP</li>
-          <li>Docker</li><li>CI/CD</li><li>Experiment Tracking</li>
-        </ul>
-      </div>
-
-      <div class="skill-row">
-        <span class="skill-row-label">Data & Tools</span>
+ 
+      <div class="skill-category">
+        <span class="skill-category-title">Data & Tools</span>
         <ul class="skills-list">
           <li>Pandas</li><li>NumPy</li><li>Apache Spark</li>
           <li>Git</li><li>Streamlit</li><li>Jupyter</li>
         </ul>
       </div>
-
-      <div class="skill-row">
-        <span class="skill-row-label">Certifications</span>
+ 
+      <div class="skill-category">
+        <span class="skill-category-title">Frameworks</span>
         <ul class="skills-list">
-          <li>Stanford ML Specialization</li><li>AWS ML Foundations</li><li>Oracle DB Foundations</li>
+          <li>PyTorch</li><li>TensorFlow</li><li>HuggingFace</li><li>LangChain</li><li>Scikit-learn</li><li>LangGraph</li>
         </ul>
       </div>
-
+ 
+      <div class="skill-category">
+        <span class="skill-category-title">MLOps & Cloud</span>
+        <ul class="skills-list">
+          <li>AWS SageMaker</li><li>AWS Lambda</li><li>AWS S3</li><li>GCP</li>
+          <li>Docker</li><li>CI/CD</li><li>Experiment Tracking</li>
+        </ul>
+      </div>
+ 
+      <div class="skill-category">
+        <span class="skill-category-title">ML / DL</span>
+        <ul class="skills-list">
+          <li>LLM Fine-tuning</li><li>NLP</li><li>Transformers</li><li>Deep Learning</li>
+          <li>Computer Vision</li><li>Reinforcement Learning</li><li>Zero-shot Learning</li><li>TD3</li>
+        </ul>
+      </div>
+ 
     </div>
   </section>
 
@@ -217,170 +226,214 @@
   <section id="projects">
     <p class="section-label">Projects</p>
 
-    <!-- LLM Reasoning & Agentic Systems -->
-    <div class="project-domain-label">LLM Reasoning & Agentic Systems</div>
-
-    <div class="project-card">
-      <h3>Quiet-STaR - Entropy-Gated Self-Taught Reasoning</h3>
-      <p>
-        Reimplemented <strong>Quiet-STaR</strong> (Zelikman et al., Stanford 2024) on GPT-2 / TinyStories,
-        where the model learns to generate internal rationales token-by-token before predicting the next word.
-        Designed an <strong>entropy-gated</strong> mechanism that triggers rationale generation only at
-        high-uncertainty tokens, rather than at every token as in the original paper - concentrating compute
-        where reasoning actually helps.
-        <strong>Result:</strong> ~12x lower loss at ~50x less compute versus a vanilla baseline, showing that
-        selective, uncertainty-driven reasoning can be dramatically more efficient than dense reasoning traces.
-      </p>
-      <div class="project-tags">
-        <span>LLM Reasoning</span><span>GPT-2</span><span>Entropy-Gating</span><span>PyTorch</span><span>Research</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/yukta1103/quiet-star-entropy" target="_blank">GitHub</a>
-      </div>
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="llm">LLM & Agentic</button>
+      <button class="filter-btn" data-filter="cv">Computer Vision</button>
+      <button class="filter-btn" data-filter="rl">Reinforcement Learning</button>
+      <button class="filter-btn" data-filter="ml">Machine Learning</button>
+      <button class="filter-btn" data-filter="nlp">NLP</button>
     </div>
 
-    <div class="project-card">
-      <h3>LoopFix - Adversarial Multi-Agent Coding System</h3>
-      <p>
-        Built a multi-agent debate system where a <strong>Builder</strong> agent writes Python solutions
-        and a <strong>Breaker</strong> agent attacks them with adversarial test cases - explaining <em>why</em> 
-        each one could break the code. They iterate until the solution is bulletproof or hits the round limit.
-        Designed a two-temperature architecture: Builder at 0.2 for deterministic correctness,
-        Breaker at 0.8 for creative adversarial reasoning.
-        <strong>Benchmark:</strong> 75% of problems fully solved (6/8), avg. 1.8 rounds to solve running 100% locally on a single GPU with zero API costs.
-      </p>
-      <div class="project-tags">
-        <span>LangGraph</span><span>Multi-Agent</span><span>DeepSeek-Coder</span><span>Ollama</span><span>Streamlit</span><span>Python</span>
+    <div class="project-grid">
+
+      <div class="project-card compact" data-domain="llm">
+        <div class="project-card-media compact-media">
+          <img src="assets/projects/quiet-star.png" alt="Quiet-STaR loss comparison chart: entropy-gated vs vanilla baseline" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+        </div>
+        <span class="domain-badge">LLM Reasoning & Agentic Systems</span>
+        <h3>Quiet-STaR - Entropy-Gated Self-Taught Reasoning</h3>
+        <p class="project-summary">Entropy-gated reasoning: ~12x lower loss at ~50x less compute than dense token-by-token rationales.</p>
+        <details class="project-details">
+          <summary>Details</summary>
+          <p>
+            Reimplemented <strong>Quiet-STaR</strong> (Zelikman et al., Stanford 2024) on GPT-2 / TinyStories,
+            where the model learns to generate internal rationales token-by-token before predicting the next word.
+            Designed an <strong>entropy-gated</strong> mechanism that triggers rationale generation only at
+            high-uncertainty tokens, rather than at every token as in the original paper - concentrating compute
+            where reasoning actually helps.
+          </p>
+        </details>
+        <div class="project-tags">
+          <span>LLM Reasoning</span><span>GPT-2</span><span>Entropy-Gating</span><span>PyTorch</span><span>Research</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yukta1103/quiet-star-entropy" target="_blank">GitHub</a>
+        </div>
       </div>
-      <div class="project-links">
-        <a href="https://github.com/yukta1103/LoopFix" target="_blank">GitHub</a>
+
+      <div class="project-card compact" data-domain="llm">
+        <div class="project-card-media compact-media">
+          <img src="assets/projects/loopfix.gif" alt="LoopFix Builder vs Breaker agent debate loop demo" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+        </div>
+        <span class="domain-badge">LLM Reasoning & Agentic Systems</span>
+        <h3>LoopFix - Adversarial Multi-Agent Coding System</h3>
+        <p class="project-summary">Builder vs Breaker agents debate code correctness — 75% solve rate, fully offline on one GPU.</p>
+        <details class="project-details">
+          <summary>Details</summary>
+          <p>
+            Built a multi-agent debate system where a <strong>Builder</strong> agent writes Python solutions
+            and a <strong>Breaker</strong> agent attacks them with adversarial test cases - explaining <em>why</em>
+            each one could break the code. They iterate until the solution is bulletproof or hits the round limit.
+            Two-temperature architecture: Builder at 0.2 for deterministic correctness, Breaker at 0.8 for
+            creative adversarial reasoning. <strong>Benchmark:</strong> 75% of problems fully solved (6/8),
+            avg. 1.8 rounds to solve, zero API costs.
+          </p>
+        </details>
+        <div class="project-tags">
+          <span>LangGraph</span><span>Multi-Agent</span><span>DeepSeek-Coder</span><span>Ollama</span><span>Streamlit</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yukta1103/LoopFix" target="_blank">GitHub</a>
+        </div>
       </div>
+
+      <div class="project-card compact" data-domain="cv">
+        <div class="project-card-media compact-media">
+          <img src="assets/projects/tumor-gradcam.png" alt="Grad-CAM heatmap overlay on histopathology tumor image" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+        </div>
+        <span class="domain-badge">Computer Vision</span>
+        <h3>Explainable AI for Tumor Classification</h3>
+        <p class="project-summary">ResNet/VGG tumor classifier with Grad-CAM + SHAP explanations for clinical interpretability.</p>
+        <details class="project-details">
+          <summary>Details</summary>
+          <p>
+            Developed a deep learning diagnostic system using ResNet and VGG to classify tumors from histopathology images.
+            Integrated <strong>Grad-CAM and SHAP</strong> to generate pixel-level and feature-level explanations,
+            making model decisions interpretable to clinicians. Applied 5-fold cross-validation and aggressive
+            augmentation to ensure generalization across tissue types.
+          </p>
+        </details>
+        <div class="project-tags">
+          <span>Healthcare AI</span><span>ResNet</span><span>Grad-CAM</span><span>SHAP</span><span>PyTorch</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yukta1103/Tumor-Classification" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card compact" data-domain="cv">
+        <div class="project-card-media compact-media">
+          <img src="assets/projects/heritagelens.gif" alt="HeritageLens webcam demo identifying a landmark in real time" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+        </div>
+        <span class="domain-badge">Computer Vision</span>
+        <h3>HeritageLens - AI Landmark Recognition</h3>
+        <p class="project-summary">ResNet18 landmark recognizer, 84% accuracy, deployed with live webcam + Wikipedia lookup.</p>
+        <details class="project-details">
+          <summary>Details</summary>
+          <p>
+            Fine-tuned ResNet18 via transfer learning on a custom-scraped dataset of 15 global landmarks,
+            achieving <strong>84% validation accuracy</strong> across 1,600+ images. Built a full data pipeline:
+            automated scraping, augmentation, and confidence-gated inference to suppress low-confidence
+            misclassifications entirely. Deployed as an interactive Streamlit app with live webcam capture
+            and real-time Wikipedia integration - misclassification display rate reduced to 0% via thresholding.
+          </p>
+        </details>
+        <div class="project-tags">
+          <span>Transfer Learning</span><span>ResNet18</span><span>PyTorch</span><span>Streamlit</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yukta1103/HeritageLens" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card compact" data-domain="rl">
+        <div class="project-card-media compact-media">
+          <img src="assets/projects/picasso.gif" alt="Picasso RL agent painting a portrait stroke by stroke" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+        </div>
+        <span class="domain-badge">Reinforcement Learning</span>
+        <h3>Picasso - Learning to Paint with Deep RL</h3>
+        <p class="project-summary">TD3 agent learns to paint stroke-by-stroke, cutting reconstruction error 83% on CelebA.</p>
+        <details class="project-details">
+          <summary>Details</summary>
+          <p>
+            Implemented TD3 from scratch on a model-based RL painting agent, replacing DDPG with twin critics,
+            delayed updates, and target policy smoothing. Trained on 38K CelebA images over 3M steps, achieving
+            83% reduction in reconstruction error using a differentiable Neural Renderer and WGAN-GP rewards.
+            Compared TD3 vs SAC on sequential stroke-based image reconstruction.
+          </p>
+        </details>
+        <div class="project-tags">
+          <span>TD3</span><span>SAC</span><span>PyTorch</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yukta1103/Picasso-Learning-to-Paint-with-Deep-Reinforcement-Learning" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card compact" data-domain="rl">
+        <div class="project-card-media compact-media">
+          <img src="assets/projects/pokemon-battle.png" alt="Pokemon battle AI agent win-rate chart over training" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+        </div>
+        <span class="domain-badge">Reinforcement Learning</span>
+        <h3>Pokémon Battle AI - Deep Q-Learning</h3>
+        <p class="project-summary">DQN/PPO agents self-play to a 22% win-rate boost over rule-based baselines.</p>
+        <details class="project-details">
+          <summary>Details</summary>
+          <p>
+            Developed DQN and PPO agents to learn optimal Pokémon battle strategies through self-play.
+            Tuned exploration schedules and shaped reward signals to accelerate convergence.
+            <strong>Impact:</strong> Achieved a <strong>22% win rate improvement</strong> over random and
+            rule-based baselines through iterative agent refinement.
+          </p>
+        </details>
+        <div class="project-tags">
+          <span>DQN</span><span>PPO</span><span>OpenAI Gym</span><span>PyTorch</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yukta1103/Reinforcement-Learning-AI-for-Pokemon-Battles" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card compact" data-domain="ml">
+        <div class="project-card-media compact-media">
+          <img src="assets/projects/earthquake.png" alt="Earthquake aftershock prediction model performance chart" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+        </div>
+        <span class="domain-badge">Machine Learning</span>
+        <h3>Earthquake First Aftershock Prediction</h3>
+        <p class="project-summary">Random Forest / XGBoost / DNN models predicting aftershock timing and magnitude from USGS data.</p>
+        <details class="project-details">
+          <summary>Details</summary>
+          <p>
+            Trained regression models (Random Forest, XGBoost, DNN) on USGS seismic data spanning 2004–2018
+            to predict the timing and magnitude of first aftershocks. Engineered spatial and temporal features
+            capturing fault geometry and historical seismicity patterns.
+            <strong>Impact:</strong> Outperformed baselines across MSE, MAE, and R² metrics.
+          </p>
+        </details>
+        <div class="project-tags">
+          <span>XGBoost</span><span>Random Forest</span><span>TensorFlow</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yukta1103/Earthquake-First-Aftershock-Prediction" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card compact" data-domain="nlp">
+        <div class="project-card-media compact-media">
+          <img src="assets/projects/sentilyrics.png" alt="SentiLyrics mood classification confusion matrix" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+        </div>
+        <span class="domain-badge">Natural Language Processing</span>
+        <h3>SentiLyrics - Lyrics Mood Classifier</h3>
+        <p class="project-summary">Mood classifier fine-tuned on 5M+ lyrics — 87% accuracy across emotion classes.</p>
+        <details class="project-details">
+          <summary>Details</summary>
+          <p>
+            Built an end-to-end NLP pipeline to classify song lyrics into mood categories for personalized
+            music recommendations. Trained and fine-tuned LSTMs, CNNs, and Transformer models on <strong>5M+
+            lyrics</strong> to capture semantic and emotional context. Benchmarked architectures systematically,
+            achieving <strong>87% accuracy</strong> with strong F1-score across mood classes.
+          </p>
+        </details>
+        <div class="project-tags">
+          <span>Transformers</span><span>BERT</span><span>PyTorch</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yukta1103/Sentilyrics-Lyrics-Mood-Classifier" target="_blank">GitHub</a>
+        </div>
+      </div>
+
     </div>
-
-    <!-- Computer Vision / Healthcare AI -->
-    <div class="project-domain-label">Computer Vision</div>
-
-    <div class="project-card">
-      <h3>Explainable AI for Tumor Classification</h3>
-      <p>
-        Developed a deep learning diagnostic system using ResNet and VGG to classify tumors from histopathology images.
-        Integrated <strong>Grad-CAM and SHAP</strong> to generate pixel-level and feature-level explanations,
-        making model decisions interpretable to clinicians.
-        Applied 5-fold cross-validation and aggressive augmentation to ensure generalization across tissue types.
-        <strong>Impact:</strong> Delivered accurate, explainable predictions that reduce the black-box barrier in AI-assisted diagnosis.
-      </p>
-      <div class="project-tags">
-        <span>Healthcare AI</span><span>Computer Vision</span><span>ResNet</span><span>Grad-CAM</span><span>SHAP</span><span>PyTorch</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/yukta1103/Tumor-Classification" target="_blank">GitHub</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <h3>HeritageLens - AI Landmark Recognition</h3>
-      <p>
-        Fine-tuned ResNet18 via transfer learning on a custom-scraped dataset of 15 global landmarks,
-        achieving <strong>84% validation accuracy</strong> across 1,600+ images.
-        Built a full data pipeline: automated scraping, augmentation, and confidence-gated inference
-        to suppress low-confidence misclassifications entirely.
-        <strong>Impact:</strong> Deployed as an interactive Streamlit app with live webcam capture and
-        real-time Wikipedia integration - misclassification display rate reduced to 0% via thresholding.
-      </p>
-      <div class="project-tags">
-        <span>Computer Vision</span><span>Transfer Learning</span><span>ResNet18</span><span>PyTorch</span><span>Streamlit</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/yukta1103/HeritageLens" target="_blank">GitHub</a>
-      </div>
-    </div>
-
-    <!-- Reinforcement Learning -->
-    <div class="project-domain-label">Reinforcement Learning</div>
-
-    <div class="project-card">
-      <h3>Picasso - Learning to Paint with Deep RL</h3>
-      <p>
-        Implemented TD3 from scratch on a model-based RL painting agent, replacing DDPG with twin critics, delayed updates, and target policy smoothing.
-        Trained on 38K CelebA images over 3M steps, achieving 83% reduction in reconstruction error using a differentiable Neural Renderer and WGAN-GP rewards.
-        Compared TD3 vs SAC on sequential stroke-based image reconstruction, analyzing tradeoffs between deterministic stability and entropy-driven exploration.
-      </p>
-      <div class="project-tags">
-        <span>Reinforcement Learning</span><span>TD3</span><span>SAC</span><span>PyTorch</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/yukta1103/Picasso-Learning-to-Paint-with-Deep-Reinforcement-Learning" target="_blank">GitHub</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <h3>Pokémon Battle AI - Deep Q-Learning</h3>
-      <p>
-        Developed DQN and PPO agents to learn optimal Pokémon battle strategies through self-play.
-        Tuned exploration schedules and shaped reward signals to accelerate convergence.
-        <strong>Impact:</strong> Achieved a <strong>22% win rate improvement</strong> over random and rule-based
-        baselines through iterative agent refinement.
-      </p>
-      <div class="project-tags">
-        <span>Reinforcement Learning</span><span>DQN</span><span>PPO</span><span>OpenAI Gym</span><span>PyTorch</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/yukta1103/Reinforcement-Learning-AI-for-Pokemon-Battles" target="_blank">GitHub</a>
-      </div>
-    </div>
-
-    <!-- ML / Predictive Modeling -->
-    <div class="project-domain-label">Machine Learning</div>
-
-    <div class="project-card">
-      <h3>Earthquake First Aftershock Prediction</h3>
-      <p>
-        Trained regression models (Random Forest, XGBoost, DNN) on USGS seismic data spanning 2004–2018
-        to predict the timing and magnitude of first aftershocks.
-        Engineered spatial and temporal features capturing fault geometry and historical seismicity patterns.
-        <strong>Impact:</strong> Outperformed baselines across MSE, MAE, and R² metrics.
-      </p>
-      <div class="project-tags">
-        <span>Machine Learning</span><span>XGBoost</span><span>Random Forest</span><span>TensorFlow</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/yukta1103/Earthquake-First-Aftershock-Prediction" target="_blank">GitHub</a>
-      </div>
-    </div>
-
-    <!-- NLP -->
-    <div class="project-domain-label">Natural Language Processing</div>
-
-    <div class="project-card">
-      <h3>SentiLyrics - Lyrics Mood Classifier</h3>
-      <p>
-        Built an end-to-end NLP pipeline to classify song lyrics into mood categories for personalized music recommendations.
-        Trained and fine-tuned LSTMs, CNNs, and Transformer models on <strong>5M+ lyrics</strong> to capture semantic and emotional context.
-        Benchmarked architectures systematically, achieving <strong>87% accuracy</strong> with strong F1-score across mood classes.
-      </p>
-      <div class="project-tags">
-        <span>NLP</span><span>Transformers</span><span>BERT</span><span>PyTorch</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/yukta1103/Sentilyrics-Lyrics-Mood-Classifier" target="_blank">GitHub</a>
-      </div>
-    </div>
-
-    <!-- <div class="project-card">
-      <h3>MoodMelody - Lyrics Emotion Classifier</h3>
-      <p>
-        Deployed a Streamlit app that classifies emotions in song lyrics using a two-stage approach:
-        TF-IDF for fast baseline classification and a fine-tuned DistilBERT model for nuanced emotion detection.
-        Containerized and deployed on Streamlit Cloud for real-time inference.
-      </p>
-      <div class="project-tags">
-        <span>NLP</span><span>DistilBERT</span><span>TF-IDF</span><span>Streamlit</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/yukta1103/MoodMelody-Lyrics-Emotion-Classifier" target="_blank">GitHub</a>
-      </div> -->
-    <!-- </div> -->
-
   </section>
 
   <!-- ── RESUME ─────────────────────────────────── -->

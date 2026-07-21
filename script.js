@@ -138,3 +138,20 @@ document.querySelectorAll('a, button, .project-card, .skill-row').forEach(el => 
   el.addEventListener('mouseenter', () => ring.classList.add('hovering'));
   el.addEventListener('mouseleave', () => ring.classList.remove('hovering'));
 });
+
+
+/* ── PROJECT FILTERS ────────────────────────────────────── */
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card[data-domain]');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    projectCards.forEach(card => {
+      const show = filter === 'all' || card.dataset.domain === filter;
+      card.style.display = show ? '' : 'none';
+    });
+  });
+});
