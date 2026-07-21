@@ -300,23 +300,34 @@
       </div>
 
       <div class="project-card compact" data-domain="cv">
-        <div class="project-card-media compact-media">
-          <img src="assets/projects/tumor.png" alt="Grad-CAM heatmap overlay on histopathology tumor image" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+        <div class="project-card-media compact-media media-carousel">
+          <div class="media-slide active">
+            <img src="assets/projects/tumor.png" alt="SHAP value heatmap explaining tumor classification prediction" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+          </div>
+          <div class="media-slide">
+            <video src="assets/demos/tumordemo.mp4" autoplay muted loop playsinline
+              onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+            </video>
+          </div>
+          <div class="media-dots">
+            <button class="media-dot active" data-slide="0" aria-label="Show SHAP heatmap"></button>
+            <button class="media-dot" data-slide="1" aria-label="Show demo video"></button>
+          </div>
         </div>
         <span class="domain-badge">Computer Vision</span>
         <h3>Explainable AI for Tumor Classification</h3>
-        <p class="project-summary">ResNet/VGG tumor classifier with Grad-CAM + SHAP explanations for clinical interpretability.</p>
+        <p class="project-summary">ResNet/VGG tumor classifier with SHAP explanations for clinical interpretability.</p>
         <details class="project-details">
           <summary>Details</summary>
           <p>
             Developed a deep learning diagnostic system using ResNet and VGG to classify tumors from histopathology images.
-            Integrated <strong>Grad-CAM and SHAP</strong> to generate pixel-level and feature-level explanations,
+            Integrated <strong>SHAP</strong> to generate feature-level explanations,
             making model decisions interpretable to clinicians. Applied 5-fold cross-validation and aggressive
             augmentation to ensure generalization across tissue types.
           </p>
         </details>
         <div class="project-tags">
-          <span>Healthcare AI</span><span>ResNet</span><span>Grad-CAM</span><span>SHAP</span><span>PyTorch</span>
+          <span>Healthcare AI</span><span>ResNet</span><span>SHAP</span><span>PyTorch</span>
         </div>
         <div class="project-links">
           <a href="https://github.com/yukta1103/Tumor-Classification" target="_blank">GitHub</a>
