@@ -237,6 +237,43 @@
 
     <div class="project-grid">
 
+      <div class="project-card compact" data-domain="llm">
+        <div class="project-card-media compact-media media-carousel">
+          <div class="media-slide active">
+            <img src="assets/projects/selfrag.png" alt="Faithfulness scoring flagging a hallucinated AWS Lambda deployment answer" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+          </div>
+          <div class="media-slide">
+            <img src="assets/demos/selfragdemo.png" alt="Faithfulness scoring passing a fully supported answer" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;media-placeholder&quot;>Demo coming soon</span>'">
+          </div>
+          <div class="media-dots">
+            <button class="media-dot active" data-slide="0" aria-label="Show hallucination catch example"></button>
+            <button class="media-dot" data-slide="1" aria-label="Show clean supported example"></button>
+          </div>
+        </div>
+        <span class="domain-badge">LLM Reasoning & Agentic Systems</span>
+        <h3>Self-Correcting RAG with Continual Faithfulness Monitoring</h3>
+        <p class="project-summary">Hybrid retrieval + fine-tuned reranker + claim-level faithfulness scoring that catches its own hallucinations before they reach the user.</p>
+        <details class="project-details">
+          <summary>Details</summary>
+          <p>
+            Built a RAG system that decomposes its own generated answers into individual factual claims
+            and checks each one against the retrieved context with an NLI cross-encoder — catching
+            confident-sounding hallucinations rather than trusting fluent output. 
+            Hybrid BM25 + dense retrieval with reciprocal rank fusion over LangChain's documentation corpus, upgraded with a
+            cross-encoder reranker fine-tuned on synthetically-generated queries and hard negatives mined
+            from the retriever's own mistakes. 
+            Shadow-eval confirmed the reranker improved recall@k from
+            0.75 to 0.875 and fixed two previously undiscoverable documents.
+          </p>
+        </details>
+        <div class="project-tags">
+          <span>Hybrid Retrieval</span><span>Cross-Encoder Reranking</span><span>Faithfulness Scoring</span><span>Qwen2.5</span><span>PyTorch</span><span>Gradio</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yukta1103/Self-Correcting-RAG-with-Continual-Faithfulness-Monitoring" target="_blank">GitHub</a>
+        </div>
+      </div>
+
        <div class="project-card compact" data-domain="llm">
         <div class="project-card-media compact-media media-carousel">
           <div class="media-slide active">
